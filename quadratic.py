@@ -13,12 +13,14 @@ def roots(a, b, c):
     else:
         return "( )"
 
+
 def value_y(a, b, c, x):
     y = a*x**2 + b*x + c
     return y
 
 
 def to_string(a, b, c):
+    
     if a != 0 and b != 0 and c != 0:
         return (f"f(x) = {a} * X^2 + {b} * X + {c}")
     elif a == 0 and b == 0 and c == 0:
@@ -34,8 +36,9 @@ def to_string(a, b, c):
     elif b == 0:
         return (f"f(x) = {a} * X^2 + {c}")
 
-def derivation(a, b):
-        if a != 0 and b != 0:
+
+def derivation(a, b, c):
+    if a != 0 and b != 0:
         return (f"f'(x) = {a*2} * X + {b}")
     elif a == 0 and b == 0:
         return ("f'(x) = 0")
@@ -43,4 +46,3 @@ def derivation(a, b):
         return (f"f'(x) = {b}")
     elif b == 0:
         return (f"f'(x) = {a*2} * X")
-
