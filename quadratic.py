@@ -13,7 +13,6 @@ def roots(a, b, c):
     else:
         return "( )"
 
-
 def value_y(a, b, c, x):
     y = a*x**2 + b*x + c
     return y
